@@ -49,7 +49,7 @@ const port = process.env.PORT || 4000
 
 const io = new Server({
   cors: {
-    origin: process.env.SOCKET_URL,
+    origin: 'https://royal-estate.netlify.app',
     methods: ['GET', 'POST'],
     credentials: true,
   },
